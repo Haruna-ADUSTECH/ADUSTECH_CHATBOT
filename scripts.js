@@ -76,8 +76,8 @@ const adustechInfo = {
         "Department of Water Resources and Environmental establishing",
         "Entrepreneurship Centre",
         "School Of General Studies"],
-    teachingStaff: 300,
-    nonTeachingStaff: 150,
+    teachingStaff: 500,
+    nonTeachingStaff: 300,
     directorates: [
         "Directorate of Academic Planning",
         "Directorate of ICT",
@@ -85,14 +85,16 @@ const adustechInfo = {
         "Directorate of Sports"
     ],
     courses: [
-        "Computer Science",
-        "Electrical Engineering",
-        "Mechanical Engineering",
-        "Civil Engineering",
-        "Business Administration",
-        "Biochemistry",
-        "Physics",
-        "Mathematics"
+        "B. Agriculture Agric. Economics & Ext.    Department of Agricultural Economics & Extension",
+
+        "B. Agriculture Animal Science.            Department of Animal Science",
+        "B. Agriculture Crop Science               Department of Crop Science",
+        "B. Fisheries & Aquaculture                Department of Fisheries & Aquaculture",
+        "B. Agriculture  Fores., Fisheries & Wildlife         Department of Forestry & Wildlife Management",
+        "B. Fisheries & Aquaculture                 Department of Fisheries & Aquaculture",
+        "B. Forestry & Wildlife Management          Department of Forestry & Wildlife Management",
+        "B. Agriculture Soil Science                Department of Soil Science",
+        
     ]
 };
 
