@@ -1,73 +1,94 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(to right, #ffe3e3, #e3f0ff); /* Soft pink to light blue background */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.chat-container {
-    width: 400px;
-    height: 500px;
-    border: 1px solid #ccc;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#chatbox {
-    padding: 10px;
-    overflow-y: scroll;
-    flex: 1;
-}
-
-#chatlogs {
-    list-style-type: none;
-    padding: 0;
     margin: 0;
 }
 
-.message {
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    background-color: #dcdcdc;
-    width: fit-content;
-    max-width: 80%;
+#chat-container {
+    width: 400px;
+    max-width: 100%;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 5px solid;
+    border-image: linear-gradient(to right, #ff99cc, #66ccff) 1; /* Pink to blue border */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow */
+    padding: 20px;
+    position: relative;
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Subtle texture */
+    background-size: cover;
 }
 
-.message.bot {
-    background-color: #add8e6;
-    align-self: flex-start;
+#welcome-container {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#welcome-message {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #34495e;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: move-text 15s linear infinite;
+}
+
+@keyframes move-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#chatlogs {
+    height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f0faff; /* Light blue background */
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .message.user {
-    background-color: #b0e57c;
-    align-self: flex-end;
+    background-color: #ffd1e1; /* Light pink for user messages */
+    text-align: right;
 }
 
-input[type="text"] {
-    width: calc(100% - 70px);
+.message.bot {
+    background-color: #d1eaff; /* Light blue for bot messages */
+}
+
+#userInput {
+    width: 75%;
     padding: 10px;
-    border: none;
-    border-top: 1px solid #ccc;
+    border: 2px solid #ddd;
+    border-radius: 8px;
 }
 
 button {
-    width: 60px;
+    width: 20%;
+    padding: 10px;
+    background-color: #66ccff; /* Blue button */
+    color: #fff;
     border: none;
-    background-color: #5cb85c;
-    color: white;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #4cae4c;
+    background-color: #ff99cc; /* Pink button on hover */
 }
