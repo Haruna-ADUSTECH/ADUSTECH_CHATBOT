@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADUSTECH_CHATBOT</title>
+    <title>ADUSTECH Chatbot</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="chat-container">
-        <div id="chatbox">
-            <div id="chatlogs"></div>
+<body onload="displayWelcomeMessage()">
+    <div id="chat-container">
+        <div id="welcome-container">
+            <div id="welcome-message">Welcome to ADUSTECH_CHATBOT! How can I assist you today?</div>
         </div>
-        <input type="text" id="userInput" placeholder="Ask me anything about ADUSTECH..." autofocus>
+        <div id="chatlogs"></div>
+        <input type="text" id="userInput" placeholder="Type your message here...">
         <button onclick="sendMessage()">Send</button>
     </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>
-
-
